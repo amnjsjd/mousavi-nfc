@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071014">
+  <title>VERNA | کیفیت - اعتماد</title>
+
+  <!-- آیکون‌های واقعی برنامه‌ها -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Vazirmatn', sans-serif;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+      overflow-x: hidden;
+
+      /* پس‌زمینه مشکی با نورهای آبی نفتی */
+      background:
+        radial-gradient(circle at 50% 8%, rgba(10, 77, 91, .42), transparent 32%),
+        radial-gradient(circle at 8% 90%, rgba(7, 55, 66, .28), transparent 28%),
+        radial-gradient(circle at 95% 65%, rgba(8, 63, 76, .24), transparent 30%),
+        #050708;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(120deg, transparent 0%, rgba(24, 117, 132, .05) 50%, transparent 100%);
+    }
+
+    .card {
+      width: min(390px, 100%);
+      padding: 28px 22px 24px;
+      border: 1px solid rgba(17, 93, 108, .65);
+      border-radius: 26px;
+      background: rgba(8, 13, 15, .82);
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, .35),
+        0 18px 60px rgba(0, 0, 0, .55),
+        0 0 35px rgba(8, 86, 101, .12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      animation: fadeIn .7s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-wrap {
+      width: 132px;
+      height: 132px;
+      margin: 0 auto 18px;
+      padding: 7px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #0c5261, #061b21);
+      box-shadow: 0 0 28px rgba(12, 91, 108, .28);
+    }
+
+    img.logo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #0d5a6b;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -.3px;
+    }
+
+    .tagline {
+      margin: 7px 0 8px;
+      color: #6faebb;
+      font-size: .82rem;
+      font-weight: 500;
+    }
+
+    .address {
+      margin: 0 auto 24px;
+      max-width: 330px;
+      color: #a9b4b7;
+      font-size: .82rem;
+      line-height: 1.9;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      background: #030506;
+      color: #f2f5f6;
+      border: 1px solid #0d5a6b;
+      border-radius: 13px;
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 600;
+
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.015);
+      transition: transform .22s ease, border-color .22s ease,
+                  box-shadow .22s ease, background .22s ease;
+    }
+
+    .btn i {
+      width: 21px;
+      font-size: 1.05rem;
+      color: #70b5c3;
+    }
+
+    .btn:hover,
+    .btn:active {
+      transform: translateY(-2px);
+      background: #071014;
+      border-color: #167b90;
+      box-shadow: 0 8px 22px rgba(8, 82, 97, .18);
+    }
+
+    .divider {
+      width: 65px;
+      height: 1px;
+      margin: 23px auto 17px;
+      background: #0d5a6b;
+      opacity: .75;
+    }
+
+    footer {
+      color: #687477;
+      font-size: .72rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 380px) {
+      .card { padding: 24px 17px 21px; }
+      .logo-wrap { width: 118px; height: 118px; }
+      h1 { font-size: 1.22rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <div class="logo-wrap">
+      <img src="verna-logo.jpg" alt="لوگوی VERNA" class="logo">
+    </div>
+
+    <h1>VERNA</h1>
+    <div class="tagline">QUALITY - TRUST</div>
+
+    <p class="address">
+      عرضه لوازم خانگی و لوازم اصلاح<br>
+      استان بوشهر، بندر گناوه، چهارراه توپ، پاساژ سپنتا
+    </p>
+
+    <div class="links">
+
+      <a href="tel:09306218138" class="btn">
+        <i class="fa-solid fa-phone"></i>
+        <span>تماس مستقیم</span>
+      </a>
+
+      <a href="https://wa.me/message/P5YAZGJZDUZTP1" class="btn">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>واتساپ</span>
+      </a>
+
+      <a href="https://t.me/the_only_man_in_sky" class="btn">
+        <i class="fa-brands fa-telegram"></i>
+        <span>تلگرام</span>
+      </a>
+
+      <a href="https://www.instagram.com/kitchen.genaveh?igsh=MTZiOTFjNHJtcTc4cQ==" class="btn">
+        <i class="fa-brands fa-instagram"></i>
+        <span>اینستاگرام</span>
+      </a>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+      © 2026 VERNA<br>
+      کیفیت • اعتماد
+    </footer>
+
+  </main>
+</body>
+</html>
